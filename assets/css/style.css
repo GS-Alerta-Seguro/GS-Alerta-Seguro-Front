@@ -1,0 +1,58 @@
+/* Importação e Reset */
+@import url('./reset.css');
+
+/* Variáveis Globais */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: 0;
+    transition: 0.4s;
+}
+
+:root {
+    --cor_primaria: #1E3A5F;
+    --cor_secundaria: #80CBC4;
+    --cor_terciaria: #FBF8EF;
+    --cor_destaque: #FFB433;
+    --cor_fundo: #fff;
+    --cor_fundo_secundario: #1a1a1a;
+    --cor_texto: #000;
+    --cor_texto_secundario: #fff;
+    --branco: #fff;
+    --cinza-claro: #cec8c8;
+    --cinza-medio: #444;
+    --cinza-escuro: #1a1a1a;
+    --cinza-bg: #f5f5f5;
+    --cinza-borda: #ccc;
+    --cinza-shadow: rgba(0, 0, 0, 0.5);
+    --cinza-shadow-light: rgba(0, 0, 0, 0.08);
+    --cinza-shadow-medium: rgba(0, 0, 0, 0.241);
+    --cinza-shadow-escuro: rgba(0, 0, 0, 0.85);
+    --azul-circulo: rgb(0, 117, 176);
+    --vermelho-circulo: rgb(201, 7, 7);
+    --verde-circulo: #1ea40c;
+    --verde: green;
+    --vermelho: #FA4032;
+}
+
+/* Temas */
+:root,
+body:not(.Tema-Vermelho):not(.Tema-Amarelo) {
+    --cor_primaria: #1E3A5F;
+    --cor_secundaria: #B4EBE6;
+    --cor_terciaria: #FBF8EF;
+    --cor_destaque: #FFB433;
+}
+body.Tema-Vermelho {
+    --cor_primaria: #7a1e18;
+    --cor_secundaria: #f51212;
+    --cor_terciaria: #FEF3E2;
+    --cor_destaque: #FAB12F;
+}
+body.Tema-Amarelo {
+    --cor_primaria: #085326;
+    --cor_secundaria: #9fedcf;
+    --cor_terciaria: #FFFBE6;
+    --cor_destaque: #FF9100;
+}

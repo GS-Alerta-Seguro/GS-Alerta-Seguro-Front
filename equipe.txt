@@ -1,0 +1,5 @@
+Eduardo Ulisses Pereira da Silva RM:566339
+Eduardo Duran Del Ciel RM:562017
+Henrique Guedes Silvestre RM:562474
+
+link repositorio: https://github.com/GS-Alerta-Seguro/GS-Alerta-Seguro-Front.git

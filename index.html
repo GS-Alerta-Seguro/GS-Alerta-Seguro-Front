@@ -1,3 +1,6 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -47,7 +50,8 @@
             </div>
         </nav>
     </header>
-     <main>
+
+    <main>
         <section class="slideshow">
             <div class="slide-container">
                 <div class="slide active">
@@ -80,6 +84,7 @@
                 </div>
             </div>
         </section>
+
         <section class="section problema" id="problema">
             <div class="container">
                 <h2 class="sobre linha">O Problema</h2>
@@ -201,3 +206,129 @@
                 </div>
             </div>
         </section>
+
+        <section class="section" id="quiz">
+            <div class="container quiz">
+                <h2 class="sobre linha">Quiz</h2>
+                <div class="quiz-container">
+                    <img src="./assets/img/mascote/mascote-fala-quizz.png" alt="" class="mascote-quiz">
+                    <div class="quiz-box">
+                        <h1 class="quiz-heading">Teste suas habilidades</h1>
+                        <h2 id="pergunta">Pergunta aqui</h2>
+                        <div id="opcoes-botao">
+                            <button class="btn">pergunta1</button>
+                            <button class="btn">pergunta2</button>
+                            <button class="btn">pergunta3</button>
+                            <button class="btn">pergunta4</button>
+                            <button class="btn">pergunta5</button>
+                        </div>
+                        <div class="botoes-container">
+                            <button onclick="voltar()" class="botao2">🡸</button>
+                            <button onclick="proxima()" class="botao">🡺</button>
+                        </div>
+                    </div>
+                    <img src="./assets/img/mascote/mascote-quiz.png" alt="" class="mascote-quiz">
+                </div>
+            </div>
+        </section>
+
+      <section id="cadastro" class="section">
+            <div class="container">
+                <h2>Cadastre-se para receber alertas em tempo real!</h2>
+                <form id="cadastro-form" class="form">
+                    <div class="form-group">
+                        <label for="nome">Nome completo*</label>
+                        <input type="text" id="nome" name="nome" required>
+                        <span class="error-message"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail*</label>
+                        <input type="email" id="email" name="email" required>
+                        <span class="error-message"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="telefone">Telefone (com DDD)*</label>
+                        <input type="tel" id="telefone" name="telefone" required>
+                        <span class="error-message"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="cep">CEP*</label>
+                        <input type="text" id="cep" name="cep" required>
+                        <span class="error-message"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="endereco">Endereço*</label>
+                        <input type="text" id="endereco" name="endereco" required>
+                        <span class="error-message"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="numero">Número*</label>
+                        <input type="text" id="numero" name="numero" required>
+                        <span class="error-message"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="complemento">Complemento</label>
+                        <input type="text" id="complemento" name="complemento">
+                    </div>
+                    <div class="form-group">
+                        <label for="bairro">Bairro*</label>
+                        <input type="text" id="bairro" name="bairro" required>
+                        <span class="error-message"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="cidade">Cidade*</label>
+                        <input type="text" id="cidade" name="cidade" required>
+                        <span class="error-message"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="estado">Estado*</label>
+                        <select id="estado" name="estado" required>
+                            <option value="">Selecione</option>
+                            <option value="AC">Acre</option>
+                            <option value="AL">Alagoas</option>
+                            <option value="AP">Amapá</option>
+                            <option value="AM">Amazonas</option>
+                            <option value="BA">Bahia</option>
+                            <option value="CE">Ceará</option>
+                            <option value="DF">Distrito Federal</option>
+                            <option value="ES">Espírito Santo</option>
+                            <option value="GO">Goiás</option>
+                            <option value="MA">Maranhão</option>
+                            <option value="MT">Mato Grosso</option>
+                            <option value="MS">Mato Grosso do Sul</option>
+                            <option value="MG">Minas Gerais</option>
+                            <option value="PA">Pará</option>
+                            <option value="PB">Paraíba</option>
+                            <option value="PR">Paraná</option>
+                            <option value="PE">Pernambuco</option>
+                            <option value="PI">Piauí</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="RN">Rio Grande do Norte</option>
+                            <option value="RS">Rio Grande do Sul</option>
+                            <option value="RO">Rondônia</option>
+                            <option value="RR">Roraima</option>
+                            <option value="SC">Santa Catarina</option>
+                            <option value="SP">São Paulo</option>
+                            <option value="SE">Sergipe</option>
+                            <option value="TO">Tocantins</option>
+                        </select>
+                        <span class="error-message"></span>
+                    </div>
+                    <div class="form-group checkbox">
+                        <input type="checkbox" id="termos" name="termos" required>
+                        <label for="termos">Concordo com os termos de uso e política de privacidade*</label>
+                        <span class="error-message"></span>
+                    </div>
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-primary">Cadastrar</button>
+                        <button type="reset" class="btn btn-secondary">Limpar</button>
+                    </div>
+                </form>
+                <div id="cadastro-success" class="cadastro-success">
+                    <h3>Cadastro realizado com sucesso!</h3>
+                    <p>Você receberá alertas sobre riscos de enchente na sua região. Fique atento ao seu e-mail e SMS.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>

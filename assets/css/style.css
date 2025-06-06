@@ -600,6 +600,22 @@ header {
     text-align: center;
 }
 
+.cadastro-success {
+    display: none;
+    background: var(--cor_terciaria, #fff);
+    border-radius: 8px;
+    padding: 24px 16px;
+    margin-top: 18px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    text-align: center;
+    color: var(--cor_primaria, #1E3A5F);
+    font-size: 1.1rem;
+}
+.cadastro-success h3 {
+    margin-bottom: 8px;
+    color: var(--verde, green);
+}
+
 /* Temas Especiais */
 body.Tema-Vermelho header,
 body.Tema-Amarelo header {

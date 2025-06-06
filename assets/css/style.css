@@ -153,3 +153,69 @@ header {
 .nav-links a:hover::after {
     width: 100%;
 }
+
+/* Botões de Tema */
+.circulos {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.circulo,
+.circulo2,
+.circulo3,
+.circulo4 {
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    box-shadow: 0px 0px 4px var(--preto);
+}
+
+.circulo {
+    background: var(--azul-circulo);
+}
+.circulo2 {
+    background: var(--vermelho-circulo);
+}
+.circulo3 {
+    background: var(--verde-circulo);
+}
+.circulo4 {
+    background: var(--cinza-escuro);
+}
+
+.circulo:active,
+.circulo2:active,
+.circulo3:active,
+.circulo4:active {
+    box-shadow: 0px 2px 0px var(--preto);
+}
+
+/* Botões de Cadastro/Login */
+.cabecalho__cadastro {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    margin-left: 24px;
+}
+
+.btn-cabecalho {
+    padding: 8px 20px;
+    border-radius: 6px;
+    border: none;
+    background: var(--cor_destaque);
+    color: var(--cor_primaria);
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+    box-shadow: 0 2px 8px #FFB43333;
+}
+
+.btn-cabecalho:hover,
+.btn-cabecalho:focus {
+    background: var(--cor_primaria);
+    color: var(--cor_destaque);
+    outline: none;
+}

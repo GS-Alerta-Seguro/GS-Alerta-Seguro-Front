@@ -599,3 +599,28 @@ header {
     border-radius: 8px;
     text-align: center;
 }
+
+/* Temas Especiais */
+body.Tema-Vermelho header,
+body.Tema-Amarelo header {
+    background-image: linear-gradient(to right, var(--cor_primaria), var(--cor_secundaria));
+}
+body.Tema-Vermelho .botao,
+body.Tema-Vermelho .botao2 {
+    background-color: var(--cinza-medio);
+    color: var(--cor_destaque);
+}
+body.Tema-Amarelo .botao,
+body.Tema-Amarelo .botao2 {
+    background-color: var(--cinza-claro);
+    color: var(--cor_destaque);
+}
+body.Tema-Vermelho .linha,
+body.Tema-Amarelo .linha {
+    border: solid var(--cor_secundaria);
+}
+
+body.tema-escuro {
+    background-color: var(--cor_fundo_secundario);
+    color: var(--cor_texto_secundario);
+}
